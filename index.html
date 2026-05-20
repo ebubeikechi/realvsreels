@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Real Vs Reels // Interactive Portal</title>
+  <style>
+    /* Reset margins and eliminate window scrolling defaults */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #070B14;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    /* Core container layout forcing full screen view structure */
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Top navigational safety utility ribbon */
+    .utility-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(15, 23, 42, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 16px;
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .title-group h1 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .title-group span {
+      font-size: 10px;
+      color: #60a5fa;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .back-btn {
+      font-size: 12px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* The viewport frame engine layout */
+    .iframe-viewport {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: #070B14;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Context Header Ribbon -->
+    <header class="utility-bar">
+      <div class="title-group">
+        <span>Application Subpage</span>
+        <h1>Real Vs Reels Portal</h1>
+      </div>
+      <!-- Change "ebube" if your GitHub username is different -->
+      <a href="https://ebube.github.io" class="back-btn">← Main Portfolio</a>
+    </header>
+
+    <!-- Full-Screen Interactive Web App Viewport -->
+    <!-- REPLACE THE SRC VALUE BELOW WITH YOUR ACTUAL GOOGLE APPS SCRIPT EXECUTABLE DEPLOYMENT URL -->
+    <iframe 
+      src="YOUR_GOOGLE_APPS_SCRIPT_EXECUTABLE_URL_HERE" 
+      class="iframe-viewport"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
